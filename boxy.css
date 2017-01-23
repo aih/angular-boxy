@@ -1,0 +1,147 @@
+/* Styling for boxy (splitter) */
+.bxContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bxContainerEW{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.bxContainerNS{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.bxContainerS{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bxContainerN{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bxContainerNW{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.bxContainerNE{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.bxContainerSE{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bxContainerSW{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.bxContainerE{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bxContainerW{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bxResizeBorderLeft{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bxResizeBorderRight{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.bxResizeBorderTop{
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bxResizeBorderBottom{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bxHgutterHandle{
+    z-index:900;
+    position:absolute;
+    top: 50%;
+    height:40px;
+    width:10px;
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%; 
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: ew-resize;
+}
+
+.bxHgutter{
+    z-index:900;
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:10px;
+}
+
+.bxVgutter{
+    z-index:900;
+    position:absolute;
+    left:0;
+    right:0;
+    height:10px;
+}
+.bxVgutterHandle{
+    z-index:900;
+    position:absolute;
+    border:solid;
+    border-width: 1px 1px 1px 1px;
+    left: 50%;
+    width:40px;
+    height:10px;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%; 
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+    cursor: ns-resize;
+}
