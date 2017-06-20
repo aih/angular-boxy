@@ -1,0 +1,24 @@
+{
+  "name": "angular-boxy",
+  "version": "1.0.0",
+  "description": "Layout for Angular apps",
+  "main": "boxy.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aih/angular-boxy.git"
+  },
+  "keywords": [
+    "angular",
+    "layout",
+    "app"
+  ],
+  "author": "Ari Hershowitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aih/angular-boxy/issues"
+  },
+  "homepage": "https://github.com/aih/angular-boxy#readme"
+}
