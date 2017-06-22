@@ -16,20 +16,24 @@
                 border: 1px solid !important;
                 border-radius: 5px;
             }
+            body{
+                /* override useragent margin */
+                margin:0;
+            }
         </style>
 
         <base href="/"/>
     </head>
     <body >
         <div id="rootDiv" ng-app="legisapp" ng-cloak  ng-controller="legisAppController" >
-            <div id="v1N" class="bxContainer"  style="height:20%;"  >
+            <div id="v1N" class="bxContainerN"  style="height:20%;"  >
                     <div id="v1N-view" class="bxContainer solidborderround"  >TEST N</div>
             </div>
             <div id="v1S" class="bxContainerS" style="height:80%;" bx-split-with="v1N" bx-resize="vertical" bx-resize-border="top">
-                <div id="v1-1W"  class="bxContainerW">
+                <div id="v1-1W"  class="bxContainerW"  style="width:60%" >
                     <div id="v1-1W-view" class="bxContainer solidborderround"  >TEST W</div>
                 </div>
-                <div id="v1-1E" class="bxContainerE" bx-resize="horizontal" style="width:60%;" bx-resize-border="left" bx-split-with="v1-1W">
+                <div id="v1-1E" class="bxContainerE" style="width:40%;" bx-resize="horizontal"  bx-resize-border="left" bx-split-with="v1-1W" >
                     <div id="v1-1E-view" class="bxContainer solidborderround" >TEST E</div>
                 </div>
             </div>
