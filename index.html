@@ -1,0 +1,54 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="author" content="Ari Hershowitz" />
+        <title></title>
+        <link rel="icon" href="favicon.ico?v=2" />
+        <link href="boxy.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .solidborder{
+                border: 1px solid !important;
+            }
+            .solidborderround{
+                border: 1px solid !important;
+                border-radius: 5px;
+            }
+        </style>
+
+        <base href="/"/>
+    </head>
+    <body >
+        <div id="rootDiv" ng-app="legisapp" ng-cloak  ng-controller="legisAppController" >
+            <div id="v1N" class="bxContainer"  style="height:20%;"  >
+                    <div id="v1N-view" class="bxContainer solidborderround"  >TEST N</div>
+            </div>
+            <div id="v1S" class="bxContainerS" style="height:80%;" bx-split-with="v1N" bx-resize="vertical" bx-resize-border="top">
+                <div id="v1-1W"  class="bxContainerW">
+                    <div id="v1-1W-view" class="bxContainer solidborderround"  >TEST W</div>
+                </div>
+                <div id="v1-1E" class="bxContainerE" bx-resize="horizontal" style="width:60%;" bx-resize-border="left" bx-split-with="v1-1W">
+                    <div id="v1-1E-view" class="bxContainer solidborderround" >TEST E</div>
+                </div>
+            </div>
+        </div><!-- [ng-app] -->
+    </body>
+    <script src="jquery.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script type="text/javascript" src="boxy.js"></script>
+    <script type="text/javascript" >
+            (function () {
+              'use strict';
+               /* global angular */
+            
+              var app = angular.module('legisapp', ['ng', 'boxy']);
+            
+              app.controller('legisAppController', ['$scope', function ($scope) {
+                console.log('Started LegisApp');
+                console.log($scope);
+              }]);
+            })();
+    </script>
+</html>
