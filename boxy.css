@@ -102,13 +102,13 @@
 }
 
 .bxHgutterHandle{
-    z-index:900;
+    z-index:90;
     position:absolute;
-    top: 50%;
+    top: calc(50% - 15px);
     height:40px;
     width:10px;
-    border: solid;
-    border-width: 1px 1px 1px 1px;
+    border: solid 1px #888;
+    border-radius: 2px;
     background-color: #eee;
     background-repeat: no-repeat;
     background-position: 50%; 
@@ -117,7 +117,7 @@
 }
 
 .bxHgutter{
-    z-index:900;
+    z-index:90;
     position:absolute;
     top:0;
     bottom:0;
@@ -125,20 +125,20 @@
 }
 
 .bxVgutter{
-    z-index:900;
+    z-index:90;
     position:absolute;
     left:0;
     right:0;
     height:10px;
 }
 .bxVgutterHandle{
-    z-index:900;
+    z-index:90;
     position:absolute;
-    border:solid;
-    border-width: 1px 1px 1px 1px;
-    left: 50%;
+    left: calc(50% - 15px);
     width:40px;
     height:10px;
+    border: solid 1px #888;
+    border-radius: 2px;
     background-color: #eee;
     background-repeat: no-repeat;
     background-position: 50%; 
