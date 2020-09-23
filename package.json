@@ -2,6 +2,7 @@
   "name": "angular-boxy",
   "version": "1.0.1",
   "description": "Layout for Angular apps",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "boxy.js",
   "scripts": {
     "test": "test"
