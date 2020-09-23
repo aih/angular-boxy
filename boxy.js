@@ -124,6 +124,7 @@
         function mouseup() {
             $document.unbind('mousemove', mousemove);
             $document.unbind('mouseup', mouseup);
+			$scope.$broadcast('bxResize');
         }
     };
 });
